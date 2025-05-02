@@ -98,7 +98,8 @@ def main():
 
     data_collator = DataCollatorWithPadding(tokenizer)
 
-    output_dir = f'saved_models/{wandb.run.name}'
+    # output_dir = f'saved_models/{wandb.run.name}'
+    output_dir = '.'
 
     training_args = TrainingArguments(
         output_dir=output_dir,
